@@ -24,8 +24,8 @@ function Eyes() {
 
     return (
         <div>
-            <div className="eyes w-full h-screen relative">
-                <div className="absolute left-[37%] flex gap-10 top-[25%]">
+            <div className="eyes w-full h-screen relative" data-scroll data-scroll-speed="-.7">
+                <div  className="absolute left-[37%] flex gap-10 top-[25%]">
                     <div className="w-[12vw] h-[12vw] rounded-full bg-zinc-100 relative">
                         <div className="w-[8vw] h-[8vw] absolute left-1/2 top-1/2 -translate-x-[50%] -translate-y-[50%] rounded-full bg-zinc-800 overflow-hidden flex justify-center items-center">
                             <div className="line w-full  absolute left-[50%] top-[50%]" style={{ transform: `translate(-50%, -50%) rotate(${rotate}deg)` }}>

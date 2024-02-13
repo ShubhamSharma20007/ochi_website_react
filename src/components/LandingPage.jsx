@@ -1,15 +1,17 @@
+import { motion } from 'framer-motion';
 import React from 'react'
 import { MdArrowOutward } from "react-icons/md";
 function LandingPage() {
   return (
+    
     <div>
-        <div className="w-full min-h-screen text-white bg-zinc-900 pt-1">
+        <div data-scroll data-scroll-speed='-.5' className=" w-full min-h-screen text-white bg-zinc-900 pt-1">
             <div className="textstructure mt-32 px-20">
                 <div className="masker font-bold text-8xl  leading-none  -tracking-normal ">
                     <h1>We Create </h1>
                 </div>
                 <div className="masker font-bold text-8xl flex gap-4 items-center  leading-none  tracking-tight ">
-                    <div className='w-[7vw] h-[5vw] bg-red-800 rounded-md'></div>
+                    <motion.div initial={{width:0}} animate={{width:"7vw"}} transition={{ease :[0.45, 0, 0.55, 1],duration:0.7}} className='w-[7vw] h-[5vw] bg-red-800 rounded-md'></motion.div>
                     <h1>Eye Opening </h1>
                 </div>
                 <div className="masker font-bold text-8xl  leading-none  tracking-tight ">
